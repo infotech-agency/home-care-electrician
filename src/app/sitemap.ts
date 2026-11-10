@@ -1,0 +1,2 @@
+export const dynamic = 'force-static';
+import type {MetadataRoute} from 'next';import {business} from '@/data/business';export default function sitemap():MetadataRoute.Sitemap{return ['','/services/','/contact/'].map(path=>({url:business.origin+path,changeFrequency:'monthly',priority:path?0.8:1}));}
