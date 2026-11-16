@@ -24,6 +24,7 @@ import {
 } from "@/components/common/Sections";
 import ServiceGrid from "@/components/services/ServiceGrid";
 import Hero from "@/components/home/Hero";
+import ACServices from '@/components/home/ACServices';
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 export default function Home() {
   return (
@@ -128,6 +129,7 @@ Taken care of."
           <ServiceGrid />
         </div>
       </section>
+      <ACServices/>
       <Steps />
       <section className="why-strip">
         <div className="container">

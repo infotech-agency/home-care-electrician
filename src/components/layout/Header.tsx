@@ -7,11 +7,11 @@ import { useState } from 'react';
 import { Menu, X, MapPin, Clock, Phone } from 'lucide-react';
 import { business } from '@/data/business';
 
-const navigation = [
-  { href: '/', label: 'Home' },
-  { href: '/services/', label: 'Services' },
-  { href: '/contact/', label: 'Contact' },
-];
+// const navigation = [
+//   { href: '/', label: 'Home' },
+//   { href: '/services/', label: 'Services' },
+//   { href: '/contact/', label: 'Contact' },
+// ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -62,7 +62,7 @@ export default function Header() {
             aria-label="Main navigation"
             className={open ? 'menu open' : 'menu'}
           >
-            {navigation.map(({ href, label }) => {
+            {/* {navigation.map(({ href, label }) => {
               const active =
                 normalizePath(pathname) === normalizePath(href);
 
@@ -77,7 +77,7 @@ export default function Header() {
                   {label}
                 </Link>
               );
-            })}
+            })} */}
           </nav>
 
           <div className="nav-cta">
@@ -95,7 +95,7 @@ export default function Header() {
             </a>
           </div>
 
-          <button
+          {/* <button
             type="button"
             className="menu-toggle"
             aria-label={open ? 'Close menu' : 'Open menu'}
@@ -104,7 +104,7 @@ export default function Header() {
             onClick={() => setOpen(!open)}
           >
             {open ? <X /> : <Menu />}
-          </button>
+          </button> */}
         </div>
       </header>
     </>
